@@ -4,7 +4,7 @@ import SkeletonCardList from "./countries/Skeleton";
 
 const MainPanel = () => {
     return (
-        <VStack justifyContent={'flex-start'} alignItems={'left'} w={'100vw'} px={'5vw'} gap={8}> 
+        <VStack justifyContent={'flex-start'} alignItems={'left'} w={'100vw'} px={'5vw'} gap={8} bg={'blue.very_dark'}> 
             <HStack justifyContent={'space-between'}>
                 <InputGroup justifySelf={'flex-start'} w={400}>
                     <InputLeftElement pointerEvents='none'>
