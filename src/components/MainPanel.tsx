@@ -1,10 +1,10 @@
 import { SearchIcon } from "@chakra-ui/icons";
-import { HStack, Input, InputGroup, InputLeftElement, Select, SelectField, VStack } from "@chakra-ui/react";
-import SkeletonCardList from "./countries/SkeletonCard";
+import { HStack, Input, InputGroup, InputLeftElement, Select, VStack } from "@chakra-ui/react";
+import SkeletonCardList from "./countries/Skeleton";
 
 const MainPanel = () => {
     return (
-        <VStack justifyContent={'flex-start'} alignItems={'left'} w={'100vw'} px={'5vw'} gap={6}> 
+        <VStack justifyContent={'flex-start'} alignItems={'left'} w={'100vw'} px={'5vw'} gap={8}> 
             <HStack justifyContent={'space-between'}>
                 <InputGroup justifySelf={'flex-start'} w={400}>
                     <InputLeftElement pointerEvents='none'>
@@ -13,10 +13,10 @@ const MainPanel = () => {
                     <Input type='tel' placeholder='Search for a country...' />
                 </InputGroup>
                 <Select justifySelf={'flex-end'} w={400} placeholder="Filter by Region">
-                    <SelectField>asd</SelectField>
+                    <option>asd</option>
                 </Select>
             </HStack>
-            <SkeletonCardList />
+            <SkeletonCardList justifySelf={'center'}/>
         </VStack>
     );
 }
