@@ -7,10 +7,11 @@ const Headers = () => {
         <Box
             py={'1rem'} 
             bgColor={'primary'}
-            w={'100vw'} px={'5vw'}>
+            w={'100vw'} px={'5vw'}
+            shadow={'lg'}>
             <HStack justifyContent={'space-between'} alignItems={'center'}>
                 <Heading as={'h2'} size={'md'}>Where in the World?</Heading>
-                <Button onClick={toggleColorMode} leftIcon={colorMode === 'dark' ? <MoonIcon /> : <SunIcon></SunIcon>}>{colorMode === 'dark' ? 'Dark Mode' : 'Ligth Mode'}</Button>
+                <Button onClick={toggleColorMode} variant={"ghost"} leftIcon={colorMode === 'dark' ? <MoonIcon /> : <SunIcon></SunIcon>}>{colorMode === 'dark' ? 'Dark Mode' : 'Ligth Mode'}</Button>
             </HStack>
         </Box>
     );

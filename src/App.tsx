@@ -5,6 +5,7 @@ import { Grid } from '@chakra-ui/react'
 import Header from './components/Header'
 import MainPanel from './components/MainPanel'
 import Footer from './components/Footer'
+import CountryPanel from './components/countries/CountryPanel'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     >
       <Header />
       <MainPanel />
+      <CountryPanel />
       <Footer />
     </Grid>
   )
