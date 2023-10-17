@@ -15,7 +15,7 @@ function App() {
       templateColumns='auto'
       gap={4}
       bgColor={'blue.dark'}
-      h="100%"
+      h="100vh"
       w={'100vw'}
       justifyContent={'center'}
       overflowY={'auto'}
